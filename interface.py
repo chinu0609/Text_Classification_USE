@@ -13,4 +13,4 @@ def text_predict(text:str):
     else:
         return "Neutral"
 inter = gr.Interface(fn=text_predict,inputs="text",outputs="text")
-inter.launch()
+inter.launch(share=True)
